@@ -26,5 +26,8 @@ namespace Outgame
         Information,
 
         Event = 10000,
+        EventQuest = 10001,
+        EventQuestResult = 10002,
+        Ranking = 10003,
     }
 }

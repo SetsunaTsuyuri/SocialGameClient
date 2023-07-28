@@ -61,6 +61,22 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Information/ListItem.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 4be12ed71750e4340861e6eb91f17979
+    m_Address: Assets/Scenes/Game/UI/Event.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 51ed2b6febebb1f40a1190d2a4bbade9
+    m_Address: Assets/Scenes/Game/UI/EventResult.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fbf28ff060901864baedf4862c30d45d
+    m_Address: Assets/Scenes/Game/UI/EventQuest.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4fcef3a091480904cb515529f4d2018d
+    m_Address: Assets/Scenes/Game/UI/Ranking.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: daffd8acf4f4ea34d93f9dfd75bdfece, type: 2}
   m_SchemaSet:

@@ -10,6 +10,9 @@ namespace Outgame
 {
     public class UIHomeView : UIStackableView
     {
+        [SerializeField]
+        GameObject _goEventButtonObject = null;
+
         protected override void AwakeCall()
         {
             ViewId = ViewID.Home;
@@ -25,6 +28,10 @@ namespace Outgame
             Debug.Log(EventHelper.GetAllOpenedEvent());
             Debug.Log(EventHelper.IsEventOpen(1));
             Debug.Log(EventHelper.IsEventGamePlayable(1));
+
+            // イベント開催中のみボタンを表示する
+            bool existsAnyEvent = EventHelper.GetAllOpenedEvent().Any();
+            _goEventButtonObject.SetActive(existsAnyEvent);
         }
 
         public void GoGacha()
@@ -47,12 +54,15 @@ namespace Outgame
             UIManager.NextView(ViewID.Quest);
         }
 
+        public void GoEvent()
+        {
+            UIManager.NextView(ViewID.Event);
+        }
+
         public void OpenInformation()
         {
             UIManager.StackView(ViewID.Information);
         }
-
-
 
         public void DialogTest()
         {
